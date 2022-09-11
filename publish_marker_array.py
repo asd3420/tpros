@@ -36,8 +36,7 @@ while not rospy.is_shutdown():
    marker.pose.position.y = 2
    marker.pose.position.z = 0 
 
-   # We add the new marker to the MarkerArray, removing the oldest
-   # marker from it when necessary
+  
   
 
 
@@ -136,14 +135,13 @@ while not rospy.is_shutdown():
    markerArray.markers.append(third_marker)
    markerArray.markers.append(fourth_marker)
 
-   # Renumber the marker IDs
+   
    id = 0
 
    for m in markerArray.markers:
        m.id = id
        id += 1
 
-   # Publish the MarkerArray
    publisher.publish(markerArray)
    publisher_line.publish(line)
 
