@@ -5,11 +5,11 @@ Installation
 
 Partie 1
 
-cd marker_ws
+`cd marker_ws
 source devel/setup.bash
 roscore
 rosrun marker_visualiser publish_marker.py /visualization_marker:=/marker_test
-rviz
+rviz`
 
 Partie 2
 
