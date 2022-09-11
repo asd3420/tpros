@@ -1,5 +1,5 @@
 # tpros
-Installation
+
 
 
 
@@ -8,7 +8,7 @@ Partie 1
 ```cd marker_ws
 source devel/setup.bash
 roscore
-rosrun marker_visualiser publish_marker.py /visualization_marker:=/marker_test
+rosrun marker_visualiser publish_marker.py 
 rviz
 ```
 
@@ -16,7 +16,7 @@ Partie 2
 
 ```source devel/setup.bash
 roscore
-rosrun marker_visualiser publish_marker_array.py /visualization_marker:=/space_delimiter
+rosrun marker_visualiser publish_marker_array.py 
 rviz
 ```
 Partie 3
